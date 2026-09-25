@@ -124,25 +124,6 @@ python3 SW1D.py gram   MODEL SPECS   [options]    synthetic seismograms
 python3 SW1D.py green  MODEL SPECS   [options]    the 9-component Green's tensor
 ```
 
-**Leave any of them off and you are asked for it** -- the command included --
-so plain `python3 SW1D.py` is a complete invocation. The two ways of supplying
-an input mix freely: whatever is on the command line is used, whatever is
-missing is asked for, so `python3 SW1D.py --wave R` asks only for the command
-and the model file.
-
-At the prompt, `--wave` defaults to `both`; the command and the two file names
-have no default and must be typed. One attempt each: a name that does not
-exist, or a command or wave type that is not recognised, stops with the same
-message the command line would have given.
-
-Prompting needs a terminal. Run from a script, a pipeline or `cron` and a
-missing argument is an error instead, quoting a command that would have worked
--- so nothing ever blocks waiting for input that cannot arrive.
-
-`SW1D.py -h`, and `-h` on each command, carry the options, their units and
-defaults, the files each command writes, and a worked example. Only the two
-input-file layouts are left here.
-
 ### `disp`
 
 Solves the eigenvalue problem and writes out dispersion files and eigenfunction files.
