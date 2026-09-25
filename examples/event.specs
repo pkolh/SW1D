@@ -1,0 +1,45 @@
+#
+#
+dist_calc_choice    d   # 'd' = receivers given as distances; 'l' = lat/long span
+glatmin     0           # the two receiver corners: used for the azimuth and distances in 'l' mode
+glonmin    -145
+glatmax     10
+glonmax     -145
+dist_reci   250         # first receiver distance, km   ('d' mode)
+dist_recf   5000        # last receiver distance, km
+dx          250         # receiver spacing, km
+azimuth   137.5         # source-to-receiver azimuth, deg clockwise from North.
+                        # 'd' mode only, and optional: uncomment to set it
+                        # directly instead of deriving it from the corners.
+nx	 5 		# number of receivers - 'l' mode only
+slatd       -10  	# event latitude
+slond       -145  	# event longitude
+evid    1               # event counter, appears in the seismogram file name
+nz	0		# bookkeeping counter
+jy	2013		# origin year
+jd	250		# origin day of year
+jh	00		# origin hour
+jm	13		# origin minute
+mdmin	0		# lowest mode to sum
+mdmx	5		# highest mode to sum
+to	0		# start-time offset, seconds
+d0	79.9 		# source depth, km
+sig     131.000 	# strike  - clockwise from North
+del     89.000  	# dip     - from horizontal
+gam     105.000 	# rake    - toward up-dip
+smoment 5.647e+25       # scalar moment, dyne-cm
+#
+#	A moment tensor may be given directly instead of the angles above, in
+#	(North, East, Down) and scaled by smoment.  Any non-zero value here means
+#	it replaces the calculations that use sig, del and gam.
+#
+# mzz  0.0
+# mxx  0.0
+# myy  0.0
+# mxz  0.0
+# myz  0.0
+# mxy  0.0
+#
+df      0.0005          # frequency step, Hz
+fo      0.005		# first frequency, Hz
+nom	  191 		# number of frequencies
