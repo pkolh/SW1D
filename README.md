@@ -1,6 +1,6 @@
 # SW1D
 
-Surface waves in a 1D layered elastic half-space.
+Surface waves in a 1D layered elastic medium.
 
 ---
 
